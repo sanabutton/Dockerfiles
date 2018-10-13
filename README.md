@@ -1,2 +1,2 @@
 # docker-parcel
-`parcel` コマンドをインストールした Docker Image。
+さなボタン(2) で使う Dockerfiles。
