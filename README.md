@@ -1,2 +1,2 @@
 # docker-parcel
-Docker Image to `parcel` command
+`parcel` コマンドをインストールした Docker Image。
