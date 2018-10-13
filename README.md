@@ -1,2 +1,2 @@
-# docker-parcel
-さなボタン(2) で使う Dockerfiles。
+# さなボタン(2) で使う Dockerfiles
+
