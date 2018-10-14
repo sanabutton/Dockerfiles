@@ -1,7 +1,7 @@
 FROM node:alpine
 
-RUN yarn global add parcel-bundler
-
 WORKDIR /usr/src/app
+
+RUN yarn global add parcel-bundler
 
 CMD parcel watch index.html
