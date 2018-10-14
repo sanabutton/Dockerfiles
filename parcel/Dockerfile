@@ -1,4 +1,4 @@
-FROM starefossen/github-pages
+FROM node:alpine
 
 RUN yarn global add parcel-bundler
 
