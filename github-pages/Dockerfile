@@ -6,7 +6,6 @@ COPY Gemfile* ./
 
 RUN apk --update add build-base \
   && bundle install \
-  && apk del build_deps \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
 CMD ["jekyll", "serve", "--watch", "--force_polling"]
