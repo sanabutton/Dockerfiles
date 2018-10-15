@@ -10,7 +10,4 @@ RUN apk --update add build-base \
 
 expose 4000 4000
 
-CMD ["jekyll", "serve", "--watch", "--force_polling",
-    "-H", "0.0.0.0",
-    "-P", "4000"
-    ]
+CMD "jekyll serve --watch --force_polling -H 0.0.0.0 -P 4000"
