@@ -8,6 +8,6 @@ RUN apk --update add build-base \
   && bundle install \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
-expose 4000 4000
+EXPOSE 4000
 
 CMD "jekyll serve --watch --force_polling -H 0.0.0.0 -P 4000"
