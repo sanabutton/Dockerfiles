@@ -1,0 +1,21 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the github-pages Docker image
+      run: cd github-pages && docker build . --file Dockerfile --tag sanabutton/github-pages:$(date +%s)
+
+    - name: Build the parcel Docker image
+      run: cd parcel  && docker build . --file Dockerfile --tag sanabutton/github-pages:$(date +%s)
